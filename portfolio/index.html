@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishor Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* HOMEPAGE ONLY STYLES */
+        
+        .hero {
+            padding: 120px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            margin-top: 40px;
+        }
+
+        .hero-buttons a {
+            display: inline-block;
+            background: white;
+            color: #0072ff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .hero-buttons a:hover {
+            background: #f4f4f4;
+            transform: scale(1.05);
+        }
+
+        /* Highlight section */
+        .highlight-section {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Hi, I'm Kishor 👋</h1>
+    <p>Aspiring Web Developer • Designer • Tech Explorer</p>
+
+    <div class="hero-buttons">
+        <a href="skills.html">View My Skills</a>
+        <a href="projects.html">See My Projects</a>
+    </div>
+</section>
+
+<!-- HIGHLIGHT FEATURES -->
+<section class="highlight-section">
+    <h2 class="section-title">What I Do</h2>
+
+    <div class="highlight-grid">
+
+        <div class="highlight-card">
+            <h3>💻 Web Development</h3>
+            <p>I create modern, responsive, and clean websites using HTML, CSS, JavaScript.</p>
+        </div>
+
+        <div class="highlight-card">
+            <h3>🎨 UI/UX Design</h3>
+            <p>I design user-friendly and visually appealing interface layouts.</p>
+        </div>
+
+        <div class="highlight-card">
+            <h3>⚙ Automation</h3>
+            <p>I build helpful tools and scripts using Python to automate tasks.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHATBOT -->
+<script>
+  window.embeddedChatbotConfig = {
+    chatbotId: "CEXWO2tMzS15shQmGPv0r",
+    domain: "www.chatbase.co"
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="CEXWO2tMzS15shQmGPv0r" domain="www.chatbase.co" defer></script>
+
+</body>
+</html>

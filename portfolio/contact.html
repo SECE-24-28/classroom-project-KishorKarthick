@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishor - Contact</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header Section */
+        .contact-header {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #6a5af9, #ff8ce6, #4db6ff);
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            animation: fadeDown 1s ease;
+        }
+
+        .contact-header h1 {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .contact-header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .contact-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+            animation: fadeIn 1.3s ease;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+        }
+
+        /* Info Card */
+        .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+            animation: floatUp 1.2s ease;
+            border: 3px solid transparent;
+        }
+
+        /* glowing border */
+        .info-card::before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            bottom: -3px;
+            right: -3px;
+            z-index: -1;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #ff8ce6, #8c6bff, #4db6ff);
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.20);
+        }
+
+        .info-card h2 {
+            color: #6a5af9;
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .info-item span {
+            font-weight: 600;
+            color: #6a5af9;
+        }
+
+        /* Form Section */
+        .contact-form {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+            animation: floatUp 1.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .contact-form::before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            bottom: -3px;
+            right: -3px;
+            z-index: -1;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #8c6bff, #ff8ce6, #4db6ff);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-top: 12px;
+            border-radius: 12px;
+            border: none;
+            background: #f1f1f1;
+            font-size: 15px;
+            transition: 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background: #e5dbff;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px;
+            font-size: 17px;
+            color: white;
+            background: linear-gradient(135deg, #6a5af9, #ff8ce6);
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        }
+
+        /* Animations */
+        @keyframes fadeDown {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<section class="contact-header">
+    <h1>Contact Me</h1>
+    <p>Let’s build something awesome together 🚀</p>
+</section>
+
+<!-- CONTACT GRID -->
+<section class="contact-container">
+    <div class="contact-grid">
+
+        <!-- Info Card -->
+        <div class="info-card">
+            <h2>Reach Me</h2>
+
+            <p class="info-item"><span>📞 Phone:</span> +91 9876543210</p>
+            <p class="info-item"><span>📧 Email:</span> kishor@example.com</p>
+            <p class="info-item"><span>📍 Location:</span> India</p>
+            <p class="info-item"><span>💬 Whatsapp:</span> Available</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send Message 🚀</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHATBOT -->
+<script>
+  window.embeddedChatbotConfig = {
+    chatbotId: "CEXWO2tMzS15shQmGPv0r",
+    domain: "www.chatbase.co"
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="CEXWO2tMzS15shQmGPv0r" domain="www.chatbase.co" defer></script>
+
+</body>
+</html>
+

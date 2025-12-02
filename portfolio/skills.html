@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishor - Skills</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Colorful Header */
+        .skills-header {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #ff8ce6, #8c6bff, #4db6ff);
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            animation: fadeDown 1s ease;
+        }
+
+        .skills-header h1 {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .skills-header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+            animation: fadeIn 1.3s ease;
+        }
+
+        .skills-grid {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+            text-align: center;
+            transition: 0.3s ease;
+            border: 3px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            animation: floatUp 1.2s ease;
+        }
+
+        /* Glowing border effect */
+        .skill-card::before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            z-index: -1;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #ff8ce6, #8c6bff, #4db6ff);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-12px) scale(1.04);
+            box-shadow: 0 18px 25px rgba(0,0,0,0.20);
+        }
+
+        .skill-card h3 {
+            font-size: 22px;
+            color: #6a5af9;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeDown {
+            0% { opacity: 0; transform: translateY(-25px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HEADER -->
+<section class="skills-header">
+    <h1>My Skills</h1>
+    <p>A mix of creativity, logic, and passion ⚡</p>
+</section>
+
+<!-- SKILLS GRID -->
+<section class="skills-container">
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>💻 HTML</h3>
+            <p>Building clean, structured webpages with modern semantic elements.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🎨 CSS</h3>
+            <p>Creating beautiful layouts using flexbox, grids, animations, and gradients.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>⚡ JavaScript</h3>
+            <p>Adding logic, interactivity, and dynamic content to websites.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🐍 Python</h3>
+            <p>Automation, tools, scripts, and experimenting with data.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>📱 Responsive Design</h3>
+            <p>Crafting experiences that work smoothly on all screen sizes.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🎨 UI / UX Basics</h3>
+            <p>Making user-friendly layouts with clean and modern styles.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHATBOT -->
+<script>
+  window.embeddedChatbotConfig = {
+    chatbotId: "CEXWO2tMzS15shQmGPv0r",
+    domain: "www.chatbase.co"
+  }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="CEXWO2tMzS15shQmGPv0r" domain="www.chatbase.co" defer></script>
+
+</body>
+</html>
